@@ -1,11 +1,14 @@
 # Build matrix for Chocofi Wireless (Corne shield on nice!nano v2).
 # Three targets: left half, right half, and a settings-reset UF2 used to
 # wipe BLE bonds and clear the settings partition before reflashing.
+#
+# Board spec uses the Zephyr 4.1 variant form introduced in ZMK Dec 2025:
+# nice_nano//zmk (short for nice_nano@2.0.0//zmk).
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_left nice_view_adapter nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_right nice_view_adapter nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
