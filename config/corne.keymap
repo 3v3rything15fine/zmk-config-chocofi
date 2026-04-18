@@ -10,7 +10,7 @@
  *   - Thumbs run the layers: Nav (left-middle-hold), Sym (right-middle-hold),
  *     Num (right-outer-hold).
  *   - Nav + Sym held together → tri-layer FUN for Bluetooth control.
- *   - Five BT profiles: 0 laptop, 1 desktop, 2 iPhone, 3 iPad, 4 spare.
+ *   - Five BT profiles: 0 desktop, 1 laptop, 2 iPad, 3 iPhone, 4 spare.
  *
  * Corne position numbering (0-41):
  *      0   1   2   3   4   5      6   7   8   9  10  11
@@ -57,7 +57,7 @@
             bindings = <
 &none  &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)      &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp CAPS  &none
 &none  &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS   &none
-&none  &trans     &trans     &trans     &trans     &trans         &trans     &trans    &trans    &trans     &trans    &none
+&none  &trans     &trans     &trans     &trans     &trans         &kp LC(LG(UP))  &kp LA(LS(TAB))  &kp LA(TAB)  &kp LC(LG(DOWN))  &trans  &none
                              &trans     &trans     &trans         &kp RET    &kp DEL   &kp BSPC
             >;
         };
